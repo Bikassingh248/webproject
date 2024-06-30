@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project 6</title>
+    <style>
+        body {
+            background-color: cyan;
+            color: black;
+        }
+
+        #onClickEvent {
+            margin: 20px;
+            padding: 10px;
+            background-color: whitesmoke;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        #mouseOverOut,
+        #mouseDownUp {
+            height: 100px;
+            width: 200px;
+            margin: 20px;
+        }
+
+        #mouseOverOut {
+            background-color: lime;
+            padding: 20px;
+        }
+
+        #mouseDownUp {
+            background-color: blue;
+            padding: 20px;
+        }
+
+        #textarea {
+            width: 200px;
+            height: 100px;
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>EVENT HANDLING USING JAVASCRIPT</h1>
+
+    <button id="onClickEvent">OnClick Event</button>
+    <span id="spanText">I am span!</span>
+
+    <div style="margin-left: 20px;">
+        <label for="nameInput">Enter your name: </label>
+        <input type="text" id="nameInput" placeholder="Insert text and Hit Enter" onkeydown="handleEnter(event)">
+    </div>
+
+    <div id="mouseOverOut" onmouseover="handleMouseOver()" onmouseout="handleMouseOut()">
+        Mouse Over and Out
+    </div>
+
+    <div id="mouseDownUp" onmousedown="handleMouseDown()" onmouseup="handleMouseUp()">
+        Mouse Down and UP
+    </div>
+
+    <div style="margin-left: 20px;">
+        <label for="textarea">Write about yourself:</label><br>
+        <textarea id="textarea" placeholder="write here...." onfocus="handleFocus()" onblur="handleBlur()"></textarea>
+    </div>
+
+    <script>
+        document.getElementById('onClickEvent').onclick = function () {
+            document.getElementById('spanText').style.color = 'red';
+            document.getElementById('spanText').innerText = 'You clicked the button!';
+        };
+
+        function handleEnter(event) {
+            if (event.key === 'Enter') {
+                alert('You entered: ' + event.target.value);
+            }
+        }
+
+        function handleMouseOver() {
+            document.getElementById('mouseOverOut').style.backgroundColor = 'yellow';
+        }
+
+        function handleMouseOut() {
+            document.getElementById('mouseOverOut').style.backgroundColor = 'lime';
+        }
+
+        function handleMouseDown() {
+            document.getElementById('mouseDownUp').style.backgroundColor = 'red';
+        }
+
+        function handleMouseUp() {
+            document.getElementById('mouseDownUp').style.backgroundColor = 'blue';
+        }
+
+        function handleFocus() {
+            document.getElementById('textarea').style.backgroundColor = 'lightgrey';
+        }
+
+        function handleBlur() {
+            document.getElementById('textarea').style.backgroundColor = 'white';
+        }
+    </script>
+</body>
+
+</html>

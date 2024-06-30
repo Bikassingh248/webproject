@@ -1,0 +1,75 @@
+<!-- form.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>FORM</title>
+	<link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+	<table>
+		<form>
+			<tr>
+				<th colspan="2">
+					<h2>Create New Account</h2>
+				</th>
+			</tr>
+
+			<tr>
+				<td><label>Name:</label></td>
+				<td><input type="text" name="name" </td>
+			</tr>
+
+			<tr>
+				<td><label>Username:</label></td>
+				<td><input type="text" name="Username" </td>
+			</tr>
+
+			<tr>
+				<td><label>Address:</label></td>
+				<td><input type="text" name="Address" </td>
+			</tr>
+
+			<tr>
+				<td><label>Gender:</label></td>
+				<td>
+					<input type="radio" name="gender" value="Male" />Male
+					<input type="radio" name="gender" value="Female" />Female
+					<input type="radio" name="gender" value="Others" />Others
+				</td>
+			</tr>
+
+			<tr>
+				<td><label>Subject:</label></td>
+				<td>
+					<input type="checkbox" name="sub1" value="web">Web
+					<input type="checkbox" name="sub2" value="C">C
+					<input type="checkbox" name="sub3" value="C++">C++
+				</td>
+			</tr>
+
+			<tr>
+				<td><label>Password:</label></td>
+				<td><input type="password" name="password" </td>
+			</tr>
+
+			<tr>
+				<td><label>Confirm Password:</label></td>
+				<td><input type="password" name="password2" </td>
+			</tr>
+
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<button type="submit">Submit</button>
+				</td>
+			</tr>
+		</form>
+	</table>
+	<img src="images/touch.jpg" alt="img" usemap="#image-map" />
+	<map name="image-map">
+		<area shape="circle" coords="50,50,30" href="https://www.youtube.com" alt="YouTube">
+	</map>
+</body>
+
+</html>

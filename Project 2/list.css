@@ -1,0 +1,27 @@
+/* list.html */
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+ol{
+	padding: 10px;
+	margin-left: 20px;
+}
+ul{
+	padding: 10px;
+	margin-left: 20px;
+}
+table{
+	border-collapse: collapse;
+	height: 300px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+}
